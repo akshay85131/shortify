@@ -2,6 +2,7 @@ const shortid = require('shortid')
 const client = require('./redis')
 let newUrl = (req, res) => {
   const url = req.body.url
+  // console.log(url)
   let id = shortid.generate()
   if (!url) {
     res.status(400).send({ message: 'URl not valid' })
