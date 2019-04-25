@@ -16,7 +16,9 @@ let newUrl = (req, res) => {
 }
 
 let getUrl = (req, res) => {
-  const { id } = req.params
+  console.log('im working')
+  const id = req.params.id
+  console.log(id)
   if (id) {
     client.get(id, (err, url) => {
       if (!err && url) {
