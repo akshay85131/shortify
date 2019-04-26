@@ -5,20 +5,26 @@
         <title>URL shortner</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">  -->
         <link rel="stylesheet" href="./shortify.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Pacifico');
+            </style> 
     </head>
     <body>
         <div class="headings">
-                <h1>SHORTIFY..!</h1><br>
-                <span>A URL Shortner</span>
+                <h1>Shortify..!</h1>
+                <span class="description">A URL Shortner</span>
+                
         </div>
              <div class="input-url">
-                 <input type="text" id= 'url' placeholder="Enter the url to shortn" class="inputBox" >
+                 <input type="text" id= 'url' placeholder="Enter the url to shortn" class="inputBox" required >
                  <button class="inputButton" id="addUrl" onclick="shorten()">Short-It</button>
              </div>
+             
              <div id="shortned-url">
-
-             </div>
+            </div>
+            
         
         <script src="./script.js"></script>
     </body>

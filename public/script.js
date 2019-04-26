@@ -16,10 +16,9 @@ function shorten () {
 
     .then(res => {
       const a = document.createElement('a')
-      div.style.display = 'block'
       a.href = 'http://localhost:3001/shortify/' + res.id
       a.textContent = 'http://localhost:3001/shortify/' + res.id
-      div.appendChild(a)  
+      div.appendChild(a)
       ClearFields()
     })
 }
