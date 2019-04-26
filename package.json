@@ -8,8 +8,18 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "cors": "^2.8.5"
-  }
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshay85131/shortify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akshay85131/shortify/issues"
+  },
+  "homepage": "https://github.com/akshay85131/shortify#readme",
+  "description": ""
 }
