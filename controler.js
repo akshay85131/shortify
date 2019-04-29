@@ -1,12 +1,13 @@
 const shortid = require('shortid')
 const client = require('./redis')
+
 let newUrl = (req, res) => {
   const url = req.body.url
   // console.log(url)
-  let id = shortid.generate()
   if (!url) {
     res.status(400).send({ message: 'URl not valid' })
   }
+  let id = shortid.generate()
   client.set(id, url, (err, result) => {
     if (!err) {
       res.status(200).send({ id })
@@ -17,7 +18,7 @@ let newUrl = (req, res) => {
 }
 
 let getUrl = (req, res) => {
-  console.log('im working')
+  // console.log('im working')
   const id = req.params.id
   console.log(id)
   if (id) {
